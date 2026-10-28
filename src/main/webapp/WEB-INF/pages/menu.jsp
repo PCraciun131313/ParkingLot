@@ -1,3 +1,4 @@
+
 <header data-bs-theme="dark">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
@@ -19,6 +20,11 @@
                     <li class="nav-item">
                         <a class="nav-link${pageContext.request.requestURI.substring(pageContext.request.requestURI.lastIndexOf('/')) eq '/about.jsp' ? ' active' : ''}"
                            href="${pageContext.request.contextPath}/about.jsp">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link${activePage eq 'Cars' ? ' active' : ''}"
+                           href="${pageContext.request.contextPath}/Cars">Cars</a>
                     </li>
 
                     <li class="nav-item">
